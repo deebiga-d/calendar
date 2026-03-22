@@ -1,0 +1,212 @@
+.filter-modal .modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+}
+
+.filter-modal .modal-container {
+  width: 100%;
+  max-width: 31.8125rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.15);
+  font-family: "Inter", sans-serif;
+}
+
+.filter-modal .modal-headerview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.filter-modal .modal-header-tittle {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #343434;
+  padding-bottom: 1rem;
+} 
+.filter-modal .filter-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.filter-modal .modal-header-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #939393;
+}
+
+.filter-modal .close-btn {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ddd;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Dropdown "placeholder" text (Select view, etc.) – not an input, it's a span */
+.filter-modal .dropdown-trigger .dropdown-value.is-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #939393;
+}
+
+.filter-modal .filter-button-container {
+  display: flex;
+  
+  flex-direction: column;
+  width: 100%;
+}
+
+.filter-modal .filter-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 0.5rem; 
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #343434;
+}
+.filter-modal label {
+ font-family: "Roboto", sans-serif;
+ font-weight: 600;
+ font-size: 14px;
+ color: #343434;
+  padding-bottom: 0.3rem;
+}
+
+
+.filter-modal .filter-button {
+  --filter-btn-bg: #f0f9ff;
+  --filter-btn-border: #7dd3fc;
+  --filter-btn-text: #0369a1;
+  --filter-btn-checkbox: #0ea5e9;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--filter-btn-border);
+  background: var(--filter-btn-bg);
+  color: var(--filter-btn-text);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.filter-modal .filter-button:hover {
+  opacity: 0.9;
+}
+
+.filter-modal .filter-button-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--filter-btn-checkbox);
+  border-radius: 0.25rem;
+  background: #fff;
+  cursor: pointer;
+  accent-color: var(--filter-btn-checkbox);
+}
+.filter-modal .filter-button-checkbox:checked {
+  background: var(--filter-btn-checkbox);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+  background-size: contain;
+  border-color: var(--filter-btn-checkbox);
+}
+.filter-modal .filter-button-checkbox--lessons {
+  border-color: #2EB1F3; 
+  background: rgba(46, 177, 243, 0.26);
+}
+
+.filter-modal .filter-button-checkbox--meetings {
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.2);
+}
+
+.filter-modal .filter-button-checkbox--events {
+  border-color: #a855f7;
+  background: rgba(168, 85, 247, 0.2);
+}
+
+/* Lessons: blue */
+.filter-modal .filter-button--lessons {
+  --filter-btn-bg: rgba(46, 177, 243, 0.26);
+  --filter-btn-border: #2eb1f3;
+  --filter-btn-text: #0369a1;
+  --filter-btn-checkbox: #2eb1f3;
+}
+
+/* Meetings: green */
+.filter-modal .filter-button--meetings {
+  --filter-btn-bg: rgba(34, 197, 94, 0.2);
+  --filter-btn-border: #22c55e;
+  --filter-btn-text: #15803d;
+  --filter-btn-checkbox: #22c55e;
+}
+
+/* Events: purple */
+.filter-modal .filter-button--events {
+  --filter-btn-bg: rgba(168, 85, 247, 0.2);
+  --filter-btn-border: #a855f7;
+  --filter-btn-text: #6b21a8;
+  --filter-btn-checkbox: #a855f7;
+}
+
+.filter-modal .filter-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.filter-modal .filter-button-reset,
+.filter-modal .filter-button-apply {
+  width: 6.3rem;
+  padding: 0.7rem 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  
+}
+
+.filter-modal .filter-button-reset {
+  background: transparent;
+  border: 1px solid #EAECF0;
+  color: #2EB1F3;
+}
+
+.filter-modal .filter-button-apply {
+  background: #2EB1F3;
+  color: white;
+  border: none;
+}
+
+
+.filter-modal .dropdown-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #343434;
+}
+

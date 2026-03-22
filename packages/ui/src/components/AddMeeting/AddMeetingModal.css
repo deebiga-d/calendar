@@ -1,0 +1,236 @@
+
+.add-meeting-modal .modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+}
+
+
+
+.add-meeting-modal .modal-container {
+  width: 100%;
+  max-width: 50rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.15);
+
+  font-family: "Inter", sans-serif;
+}
+
+.add-meeting-modal .modal-headerview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.add-meeting-modal .modal-header-tittle {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #343434;
+
+ 
+}
+
+.add-meeting-modal .modal-header-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+
+  color: #939393;
+}
+
+.add-meeting-modal .close-btn {
+  width: 1.75rem;
+  height: 1.75rem;
+
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ddd;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.add-meeting-modal .modal-body {
+  margin-top: 1.25rem;
+}
+
+.add-meeting-modal .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.125rem;
+}
+
+.add-meeting-modal .form-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+
+  margin-bottom: 0.375rem;
+}
+
+.add-meeting-modal .form-label span {
+  color: red;
+}
+
+.add-meeting-modal .form-input {
+  padding: 0.8125rem 0.75rem;
+
+  border: 0.0625rem solid #e5e7eb;
+  border-radius: 0.375rem;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+   color: #343434;
+
+  outline: none;
+}
+
+
+
+.add-meeting-modal .form-input::placeholder {
+  color: #939393;
+}
+
+.add-meeting-modal textarea.form-input {
+  height: 6.25rem;
+  resize: none;
+}
+
+.add-meeting-modal .row {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-meeting-modal .row .form-group {
+  flex: 1;
+}
+
+.add-meeting-modal .row .scheduler-group {
+  flex: 2;
+}
+
+ .add-meeting-modal .fake-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 14px 12px;
+  cursor: pointer;
+  background: #fff;
+}
+
+
+.add-meeting-modal .fake-select:hover {
+  border-color: #bfbfbf;
+}
+
+.add-meeting-modal .fake-select.placeholder span {
+  color: #939393;
+
+} 
+.add-meeting-modal .fake-select span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem; 
+  line-height: 1;    
+  letter-spacing: 0;
+  color: #939393;    
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+
+}
+
+
+
+.add-meeting-modal .dropdown-icon {
+  font-size: 0.875rem;
+  color: #777;
+  transition: transform 0.2s ease;  
+   flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.add-meeting-modal .fake-select.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.add-meeting-modal .modal-footerview {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+
+  margin-top: 0.75rem;
+}
+
+.add-meeting-modal .back-btn {
+  padding: 0.5rem 1.125rem;
+
+  border-radius: 0.375rem;
+  border: 0.0625rem solid #ddd;
+
+  background: #f9fafb;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  color: #343434;
+  cursor: pointer;
+}
+
+.add-meeting-modal .add-btn {
+  padding: 0.5rem 0.875rem;
+
+  border-radius: 0.375rem;
+  border: none;
+
+  background: #2eb1f3;
+  color: white;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.add-meeting-modal .add-btn:hover {
+  background: #1ea3e6;
+}
+
+.add-meeting-modal .scheduler-group {
+  position: relative;
+}
+
+.add-meeting-modal .error-text {
+  margin-top: 0.25rem;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+
+  color: red;
+} 
+.add-meeting-modal .fake-select span {
+  font-family: "Roboto", sans-serif;  
+  font-weight: 400;                     
+  font-style: normal;                 
+  font-size: 0.875rem;   
+  line-height: 1;       
+  letter-spacing: 0;
+  color: #333;       
+}

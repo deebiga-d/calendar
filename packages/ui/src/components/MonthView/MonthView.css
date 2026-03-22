@@ -1,0 +1,142 @@
+.month-view {
+  width: 100%;
+  height: 100%;
+}
+
+.month-view .monthview-container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 0.0625rem solid #EAECF0;
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+/* Wrapper so weekday row and grid scroll together and stay aligned */
+.month-view .month-view-scroll-content {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex: 1;
+}
+
+.month-view .calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(11rem, 1fr));
+  background: #ffffff;
+  border-bottom: 0.0625rem solid #EAECF0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 2.5rem;
+  box-sizing: border-box;
+}
+
+.month-view .weekday {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #2EB1F3;
+
+  border-right: 0.0625rem solid #EAECF0;
+}
+
+.month-view .weekday:last-child {
+  border-right: none;
+}
+
+
+
+.month-view .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(11rem, 1fr));
+  grid-auto-rows: minmax(7rem, auto);
+  min-height: min-content;
+  width: 100%;
+  min-width: min-content;
+}
+
+
+
+
+.month-view .calendar-cell {
+  position: relative;
+  padding: 0.625rem;
+
+  border-right: 0.0625rem solid #F2F4F7;
+  border-bottom: 0.0625rem solid #F2F4F7;
+  background: #ffffff;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 10rem;
+  min-width: 11rem;
+}
+
+.month-view .calendar-cell:nth-child(7n) {
+  border-right: none;
+}
+
+
+
+
+.month-view .date-number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.month-view .date-number.today {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.75rem;
+  height: 1.75rem;
+
+  background: #2EB1F3;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+
+
+
+.month-view .meetings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+
+
+
+.month-view .more-meetings {
+  margin-top: auto;
+
+  border: none;
+  border-radius: 0.25rem;
+
+  background: rgba(52, 52, 52, 0.12);
+
+  padding: 0.25rem 0.5rem;
+
+  font-weight: 400;
+  font-size: 0.75rem;
+  font-family: "Fredoka", sans-serif;
+  color: #000000;
+
+  cursor: pointer;
+}

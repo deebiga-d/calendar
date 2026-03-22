@@ -1,0 +1,267 @@
+
+.edit-meeting-modal .modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+}
+
+
+
+.edit-meeting-modal .modal-container {
+  width: 100%;
+  max-width: 50rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.15);
+
+  font-family: "Inter", sans-serif;
+}
+
+.edit-meeting-modal .modal-headerview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edit-meeting-modal .modal-header-tittle {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #343434;
+
+ 
+}
+
+.edit-meeting-modal .modal-header-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+
+  color: #939393;
+}
+
+.edit-meeting-modal .close-btn {
+  width: 1.75rem;
+  height: 1.75rem;
+
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ddd;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.edit-meeting-modal .modal-body {
+  margin-top: 1.25rem;
+}
+
+.edit-meeting-modal .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.125rem;
+}
+
+.edit-meeting-modal .form-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+
+  margin-bottom: 0.375rem;
+}
+
+.edit-meeting-modal .form-label span {
+  color: red;
+}
+
+.edit-meeting-modal .form-input {
+  padding: 0.8125rem 0.75rem;
+
+  border: 0.0625rem solid #e5e7eb;
+  border-radius: 0.375rem;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+
+  color: #343434;
+
+  outline: none;
+}
+
+
+
+.edit-meeting-modal .form-input::placeholder {
+  color: #939393;
+}
+
+.edit-meeting-modal textarea.form-input {
+  height: 6.25rem;
+  resize: none;
+}
+
+.edit-meeting-modal .row {
+  display: flex;
+  gap: 1rem;
+}
+
+.edit-meeting-modal .row .form-group {
+  flex: 1;
+}
+
+.edit-meeting-modal .row .scheduler-group {
+  flex: 2;
+}
+
+.edit-meeting-modal .fake-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  
+  height: 2.75rem;
+  padding: 0 0.75rem;
+
+  border: 0.0625rem solid #d9d9d9;
+  border-radius: 0.375rem;
+
+  background: #fff;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  color: #333;
+  cursor: pointer;
+
+  line-height: 1.5rem; 
+  transition: border 0.2s ease;
+}
+
+
+.edit-meeting-modal .fake-select:hover {
+  border-color: #bfbfbf;
+}
+
+.edit-meeting-modal .fake-select.placeholder span {
+  color: #939393;
+
+} 
+.edit-meeting-modal .fake-select span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem; 
+  line-height: 1;    
+  letter-spacing: 0;
+  color: #939393;       
+}
+
+
+
+.edit-meeting-modal .dropdown-icon {
+  font-size: 0.875rem;
+  color: #777;
+  transition: transform 0.2s ease;
+}
+
+.edit-meeting-modal .fake-select.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.edit-meeting-modal .modal-footerview {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  
+  margin-top: 0.75rem;
+} 
+.edit-meeting-modal .right-btns {
+  display: flex;
+  gap: 1rem;
+} 
+.edit-meeting-modal .left-btn button {
+  display: flex;
+  /* border: 1px solid red; */ 
+} 
+.edit-meeting-modal .delete-but 
+{
+  display: inline-flex;     
+  align-items: center;    
+  gap: 12px;                  
+  padding: 13px 18px;
+  border-radius: 10px;
+  border: 1px solid #EF4444;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #EF4444;
+} 
+
+.edit-meeting-modal .back-btn {
+  padding: 0.5rem 1.125rem;
+
+  border-radius: 0.375rem;
+  border: 0.0625rem solid #ddd;
+
+  background: #f9fafb;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  color: #343434;
+  cursor: pointer;
+}
+
+.edit-meeting-modal .add-btn {
+  padding: 0.5rem 0.875rem;
+
+  border-radius: 0.375rem;
+  border: none;
+
+  background: #2eb1f3;
+  color: white;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.edit-meeting-modal .add-btn:hover {
+  background: #1ea3e6;
+}
+
+.edit-meeting-modal .scheduler-group {
+  position: relative;
+}
+
+.edit-meeting-modal .error-text {
+  margin-top: 0.25rem;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+
+  color: red;
+} 
+.edit-meeting-modal .fake-select span {
+  font-family: "Roboto", sans-serif;  
+  font-weight: 400;                     
+  font-style: normal;                 
+  font-size: 0.875rem;   
+  line-height: 1;       
+  letter-spacing: 0;
+  color: #333;       
+}

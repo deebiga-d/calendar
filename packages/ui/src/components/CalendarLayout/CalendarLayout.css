@@ -1,0 +1,23 @@
+.calendar-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.calendar-layout .calendar-layout-header {
+  display: flex;
+}
+
+.calendar-layout .calendar-layout-body {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+}
+
+.calendar-layout .calendar-layout-body > *:first-child {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+}

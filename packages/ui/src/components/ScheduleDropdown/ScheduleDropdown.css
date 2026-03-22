@@ -1,0 +1,130 @@
+.schedule-dropdown {
+  width: 100%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+}
+
+/* Row Layout */
+.schedule-dropdown .schedule-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  align-items: flex-end;
+}
+
+.schedule-dropdown .second-row {
+  justify-content: space-between;
+}
+
+/* Field */
+.schedule-dropdown .schedule-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.schedule-dropdown .schedule-field label {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  color: #333;
+}
+
+.schedule-dropdown .schedule-field label span {
+  color: red;
+}
+
+/* Input */
+.schedule-dropdown .input-with-icon {
+  position: relative;
+}
+
+.schedule-dropdown .input-with-icon input {
+  width: 11rem;
+  height: 2.5rem;
+  padding: 0 2.5rem 0 0.75rem;
+  border: 0.0625rem solid #d9d9d9;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.schedule-dropdown .input-with-icon img {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.6;
+}
+
+/* Time group */
+.schedule-dropdown .time-group {
+  display: flex;
+}
+
+.schedule-dropdown .time-group input {
+  width: 5.5rem;
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  border: 0.0625rem solid #d9d9d9;
+  border-right: none;
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.schedule-dropdown .time-group select {
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  border: 0.0625rem solid #d9d9d9;
+  border-radius: 0 0.375rem 0.375rem 0;
+  background: #fff;
+}
+
+/* Timezone */
+.schedule-dropdown .timezone-field input {
+  width: 16rem;
+}
+
+/* Checkboxes */
+.schedule-dropdown .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.schedule-dropdown .checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+}
+
+/* Buttons */
+.schedule-dropdown .button-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.schedule-dropdown .cancel-btn {
+  background: #f1f1f1;
+  border: 0.0625rem solid #d9d9d9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.schedule-dropdown .save-btn {
+  background: #2ea7ff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}

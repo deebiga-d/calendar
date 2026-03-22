@@ -1,0 +1,216 @@
+.minicalendar-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:100%;
+}
+
+/* Header container */
+.minicalendar-main-container .calendar-sidebar-mini-calendar-container {
+  background-color: white;
+  display: flex;  
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.minicalendar-main-container .minicalendar-month-year 
+{
+    font-family: "Roboto", sans-serif; 
+    font-size: 0.96875rem;
+    font-weight: 600; 
+    color: #343434
+}
+.minicalendar-main-container .claendar-sidebar-minicalendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.minicalendar-main-container .calendar-minicalendar-heading {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+/* Round dropdown button */
+.minicalendar-main-container .mini-calendar-dropdown-button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #eaecf0;
+}
+
+/* Month name row */
+.minicalendar-main-container .minicalendar-month-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaecf0;
+  /* padding-bottom: 0.75rem; */
+  padding: 1rem 1.5rem 1rem 1.5rem;
+} 
+.minicalendar-main-container .mincalendar-dropdown-year-container  
+{
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+} 
+.minicalendar-main-container .minicalendar-dropdown-btn {
+  width: 100%;        
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #EAECF0;
+  background: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.minicalendar-main-container .minicalendar-img-downarrow 
+{
+  color: red;
+}
+
+.minicalendar-main-container .mainicalendar-dropdown-but {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transform: rotate(90deg);
+  color: gray;
+}
+
+/* Mini calendar */
+.minicalendar-main-container .mini-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Days row */
+.minicalendar-main-container .mini-calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 12px;
+  color: #667085; 
+  font-family: "Inter", sans-serif;
+    font-size: 0.58125rem;
+    font-weight: 500;
+    color: #343434;
+}
+
+/* Dates grid */
+.minicalendar-main-container .mini-calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;  
+
+}
+
+.minicalendar-main-container .mini-calendar-dates span {
+  display: inline-flex;      /* important */
+  align-items: center;       /* vertical center */
+  justify-content: center;   /* horizontal center */
+  width: 32px;               /* equal width */
+  height: 32px;              /* equal height */
+  border-radius: 50%;        /* makes circle */
+  cursor: pointer; 
+}
+
+.minicalendar-main-container .mini-calendar-dates span.week-highlight {
+background-color: #2EB1F366;
+
+  font-weight: 500;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  padding: 6px 0;
+ 
+  
+}
+
+.minicalendar-main-container .mini-calendar-dates span.week-highlight.highlighted {
+  
+
+  border-radius: 0;
+  width: 100%;
+  height: 100%; 
+ 
+ 
+}
+
+
+
+
+.minicalendar-main-container .leftdropdown-img
+{
+    width: 0.8rem;
+    height: 0.8rem;
+    rotate: 270deg;
+} 
+.minicalendar-main-container .rightdropdown-img
+{
+    width: 0.8rem;
+    height: 0.8rem;
+    rotate: 270deg;
+} 
+.minicalendar-main-container .mini-calendar-dates span.highlighted {
+  /* background-color: #1E90FF;  */
+  
+  border-radius: 50%;
+}
+
+.minicalendar-main-container .week-row.week-highlight-row {
+  background-color: #ADD8E6; 
+  border-radius: 8px;
+  padding: 2px 0;
+  display: flex;
+  gap: 4px;
+}
+
+/* Today as circle */
+.minicalendar-main-container .mini-calendar-dates span.highlighted {
+  background-color: #1E90FF;
+ 
+    width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 6px 0; 
+ 
+
+}  
+.minicalendar-main-container .dropdown-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.minicalendar-main-container .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  width: 120px;
+  scrollbar-width: none;
+}
+
+.minicalendar-main-container .dropdown-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.minicalendar-main-container .dropdown-item {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.minicalendar-main-container .dropdown-item:hover {
+  background-color: #f0f4ff;
+}

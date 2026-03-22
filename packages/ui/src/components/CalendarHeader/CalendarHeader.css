@@ -1,0 +1,212 @@
+.calendar-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  /* border-bottom: 1px solid #EAECF0; */
+  background: #fff;
+  flex-shrink: 0; 
+}
+
+
+.calendar-header-container .calendar-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.calendar-header-container .date-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+  position: relative;
+ 
+
+} 
+.calendar-header-container .date-btn-wrapper 
+{
+  position: relative;
+  display: inline-block; 
+
+}
+
+.calendar-header-container .mini-calendar-wrapper {
+  position: absolute;
+  top: 120%;
+  left: 0;
+
+  width: max-content;      
+  min-width: 17rem;        
+
+  background: #ffffff;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.12);
+  padding: 12px;
+  z-index: 1000;
+}
+
+/* ICON BUTTONS */
+.calendar-header-container .icon-btn {
+  background: #F8FBFF;
+  border: 1px solid #EAECF0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.calendar-header-container .icon-back-btn 
+{
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    rotate: 180deg;
+}
+/* DATE BUTTON */
+.calendar-header-container .date-btn {
+  background: #F8FBFF;
+  border: 1px solid #EAECF0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #344054;
+  cursor: pointer;
+  gap:1rem; 
+  display: flex;
+   font-family: "Roboto", sans-serif; 
+   font-size: 0.875rem;
+   font-weight: 400;
+   color: #343434;
+  
+}
+
+/* RIGHT */
+.calendar-header-container .calendar-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* VIEW SWITCH */
+.calendar-header-container .view-switch {
+  display: flex;
+  background: #F8FBFF;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  padding: 4px;
+   font-family: "Roboto", sans-serif; 
+   font-size: 0.875rem;
+   font-weight: 400;
+}
+
+.calendar-header-container .view-switch button {
+  border: none;
+  background: transparent;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #939393;
+  border-radius: 6px; 
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.calendar-header-container .view-switch .active {
+  background: #2EB1F3;
+  color: #EAECF0; 
+  font-weight: 400;
+  font-family: "Roboto", sans-serif; 
+  font-size: 0.875rem;
+}
+
+/* FILTER */
+.calendar-header-container .filter-btn {
+  border: 1px solid #2EB1F3;
+  background: transparent;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* NEW BUTTON */
+.calendar-header-container .new-btn {
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  /* overflow: visible; */
+  gap: 1px;
+}
+
+.calendar-header-container .new-main {
+  background: #2EB1F3;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.calendar-header-container .new-arrow {
+  background: #2EB1F3;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+.calendar-header-container .new-menu span {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #343434;
+}
+
+.calendar-header-container .new-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #EAECF0;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.12);
+  padding: 4px 0;
+  min-width: 11rem;
+  z-index: 1500;
+}
+
+.calendar-header-container .new-menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  color: #344054;
+  text-align: left;
+}
+
+.calendar-header-container .new-menu-item img {
+  width: 16px;
+  height: 16px;
+}
+
+.calendar-header-container .new-menu-item:hover {
+  background: #F8FBFF;
+}
