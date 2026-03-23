@@ -157,7 +157,7 @@ const handleYearSelect = (year: number) => {
       </div>
 
       
-     <div className="mincalendar-dropdown-year-container">
+     <div className="mincalendar-dropdown-year-container" ref={dropdownRef}>
 
   
   <div className="dropdown-wrapper">
