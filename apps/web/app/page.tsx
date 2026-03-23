@@ -1,12 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getSchedules , createSchedule } from "../services/calendar.api";
-import { CalendarLayout } from "@repo/ui";
+import {
+  getSchedules,
+  createSchedule,
+  type CreateSchedulePayload as ApiCreateSchedulePayload,
+} from "../services/calendar.api";
+import {
+  CalendarLayout,
+  CalendarTheme,
+  type CreateSchedulePayload,
+} from "@repo/ui";
 
 const Page = () => {
   const [schedules, setSchedules] = useState<any[]>([]);
-  const [currentDate, setCurrentDate] = useState(new Date());
   const [activeView, setActiveView] =
     useState<"today" | "week" | "month">("today");
 
@@ -21,28 +28,35 @@ const Page = () => {
       }
     };
 
-    fetchData(); 
-  }, []); 
-  const handleCreateSchedule = async (payload: CreateSchedulePayload) => {
-  try {
-    await createSchedule(payload);
+    fetchData();
+  }, []);
 
-    const updated = await getSchedules();
-    setSchedules(updated);
-  } catch (error) {
-    console.error("Error creating schedule:", error);
-  }
-};
+  const handleCreateSchedule = async (payload: CreateSchedulePayload) => {
+    try {
+      await createSchedule(payload as unknown as ApiCreateSchedulePayload);
+
+      const updated = await getSchedules();
+      setSchedules(updated);
+    } catch (error) {
+      console.error("Error creating schedule:", error);
+    }
+  };
+
+  const accent =
+    typeof process.env.NEXT_PUBLIC_CALENDAR_ACCENT === "string"
+      ? process.env.NEXT_PUBLIC_CALENDAR_ACCENT
+      : undefined;
 
   return (
     <div style={{ height: "100vh" }}>
-      <CalendarLayout
-        activeView={activeView}
-        onViewChange={setActiveView}
-        currentDate={currentDate}
-        schedules={schedules}   
-        onCreateSchedule={handleCreateSchedule}
-      />
+      <CalendarTheme accentColor={accent}>
+        <CalendarLayout
+          activeView={activeView}
+          onViewChange={setActiveView}
+          schedules={schedules}
+          onCreateSchedule={handleCreateSchedule}
+        />
+      </CalendarTheme>
     </div>
   );
 };

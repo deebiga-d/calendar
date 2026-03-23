@@ -41,7 +41,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  color: #2EB1F3;
+  color: var(--calendar-accent);
 
   border-right: 0.0625rem solid #EAECF0;
 }
@@ -102,7 +102,7 @@
   width: 1.75rem;
   height: 1.75rem;
 
-  background: #2EB1F3;
+  background: var(--calendar-accent);
   color: #ffffff;
   border-radius: 50%;
   font-weight: 600;

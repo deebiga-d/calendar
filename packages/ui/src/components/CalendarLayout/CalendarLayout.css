@@ -16,7 +16,7 @@
   min-width: 0;
 }
 
-.calendar-layout .calendar-layout-body > *:first-child {
+.calendar-layout .calendar-layout-main {
   flex: 1;
   min-width: 0;
   overflow: auto;

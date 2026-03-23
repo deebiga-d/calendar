@@ -12,7 +12,7 @@
   text-align: center;
   padding: 12px 0;
   font-size: 14px;
-  color: #2EB1F3;
+  color: var(--calendar-accent);
   border-bottom: 1px solid #EAECF0;
 }
 
@@ -29,7 +29,7 @@
 font-weight: 500;
 font-style: Medium;
 font-size: 0.9375rem;
-color: #2EB1F3;
+color: var(--calendar-accent);
 } 
 .today-view-container .todays-date .date {
   font-family: Roboto;

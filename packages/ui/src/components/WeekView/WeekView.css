@@ -69,10 +69,10 @@
 
 /* Active Day */
 .week-view-container .active-day {
-  border-bottom: 2px solid #2EB1F3;
+  border-bottom: 2px solid var(--calendar-accent);
 } 
 .week-view-container .active-day .date,
 .week-view-container .active-day .day {
-  color: #2EB1F3;
+  color: var(--calendar-accent);
   font-weight: 500;
 }

@@ -84,7 +84,7 @@
 /* ---------- EVENT ---------- */
 .teams-day-view .teams-event {
   background-color: #e8f0fe;
-  border-left: 3px solid #2564cf;
+  border-left: 3px solid var(--calendar-accent);
   padding: 4px 6px;
   font-size: 12px;
   border-radius: 3px;

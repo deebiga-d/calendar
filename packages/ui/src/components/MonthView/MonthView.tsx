@@ -265,6 +265,8 @@ const MonthView = ({ currentDate, schedules = [] }: Props) => {
         <EditMeeting
           meeting={selectedMeeting}
           onClose={() => setShowEditModal(false)}
+          onUpdate={() => setShowEditModal(false)}
+          onDelete={() => setShowEditModal(false)}
         />
       )}
     </div>

@@ -117,7 +117,7 @@
 }
 
 .calendar-header-container .view-switch .active {
-  background: #2EB1F3;
+  background: var(--calendar-accent);
   color: #EAECF0; 
   font-weight: 400;
   font-family: "Roboto", sans-serif; 
@@ -126,7 +126,7 @@
 
 /* FILTER */
 .calendar-header-container .filter-btn {
-  border: 1px solid #2EB1F3;
+  border: 1px solid var(--calendar-accent);
   background: transparent;
   padding: 10px 10px;
   border-radius: 10px;
@@ -145,7 +145,7 @@
 }
 
 .calendar-header-container .new-main {
-  background: #2EB1F3;
+  background: var(--calendar-accent);
   color: white;
   border: none;
   padding: 10px 10px;
@@ -160,7 +160,7 @@
 }
 
 .calendar-header-container .new-arrow {
-  background: #2EB1F3;
+  background: var(--calendar-accent);
   border: none;
   padding: 8px 10px;
   cursor: pointer;

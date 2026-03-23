@@ -122,7 +122,7 @@
 }
 
 .minicalendar-main-container .mini-calendar-dates span.week-highlight {
-background-color: #2EB1F366;
+background-color: color-mix(in srgb, var(--calendar-accent) 40%, transparent);
 
   font-weight: 500;
   border-radius: 0;

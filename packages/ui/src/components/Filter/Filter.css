@@ -135,7 +135,7 @@
   border-color: var(--filter-btn-checkbox);
 }
 .filter-modal .filter-button-checkbox--lessons {
-  border-color: #2EB1F3; 
+  border-color: var(--calendar-accent); 
   background: rgba(46, 177, 243, 0.26);
 }
 
@@ -152,9 +152,9 @@
 /* Lessons: blue */
 .filter-modal .filter-button--lessons {
   --filter-btn-bg: rgba(46, 177, 243, 0.26);
-  --filter-btn-border: #2eb1f3;
+  --filter-btn-border: var(--calendar-accent);
   --filter-btn-text: #0369a1;
-  --filter-btn-checkbox: #2eb1f3;
+  --filter-btn-checkbox: var(--calendar-accent);
 }
 
 /* Meetings: green */
@@ -193,11 +193,11 @@
 .filter-modal .filter-button-reset {
   background: transparent;
   border: 1px solid #EAECF0;
-  color: #2EB1F3;
+  color: var(--calendar-accent);
 }
 
 .filter-modal .filter-button-apply {
-  background: #2EB1F3;
+  background: var(--calendar-accent);
   color: white;
   border: none;
 }

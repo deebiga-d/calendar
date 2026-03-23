@@ -36,7 +36,7 @@
 /* .dropdown-trigger:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(46, 177, 243, 0.2);
-  border-color: #2eb1f3;
+  border-color: var(--calendar-accent);
 } */
 
 .dropdown-trigger:disabled {
@@ -108,7 +108,7 @@
 }
 
 .dropdown-check {
-  color: #2eb1f3;
+  color: var(--calendar-accent);
   font-weight: 700;
 }
 
